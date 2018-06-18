@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/store</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<mapping class="com.thang.entity.Employee" />
+		<mapping class="com.thang.entity.User" />
+		<mapping class="com.thang.entity.Customer" />
+		<mapping class="com.thang.entity.Order" />
+		<mapping class="com.thang.entity.LineItem" />
+		<mapping class="com.thang.entity.Distributor" />
+		<mapping class="com.thang.entity.Category" />
+		<mapping class="com.thang.entity.CategoryTranslation" />
+		<mapping class="com.thang.entity.Comment" />
+		<mapping class="com.thang.entity.CreditCard" />
+		<mapping class="com.thang.entity.CreditCard" />
+		<mapping class="com.thang.entity.Product" />
+		<mapping class="com.thang.entity.ProductTranslation" />
+		<mapping class="com.thang.entity.ImportedProduct" />
+		<mapping class="com.thang.entity.Event" />
+		<mapping class="com.thang.entity.SaleProduct" />
+	</session-factory>
+</hibernate-configuration>
